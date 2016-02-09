@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/AmericanCouncils/secure-ng-resource.git"
   },
-  "main": "build/secure-ng-resource.min.js",
+  "main": "index.js",
   "dependencies": {
     "angular": "1.5.x"
   },
