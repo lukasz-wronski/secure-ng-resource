@@ -6,7 +6,7 @@ angular.module('secureNgResource')
 function($httpProvider) {
     // TODO Interceptors are deprecated, but we need access to the
     // status code of the response and transformResponse cannot get us that.
-    $httpProvider.responseInterceptors.push([
+    $httpProvider.interceptors.push([
     'authSession', '$q',
     function(authSession, $q) {
         var responder = function(response) {

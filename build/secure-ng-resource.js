@@ -2,7 +2,7 @@
 * secure-ng-resource JavaScript Library
 * https://github.com/AmericanCouncils/secure-ng-resource/ 
 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
-* Compiled At: 06/23/2015 10:04
+* Compiled At: 02/09/2016 16:12
 ***********************************************/
 (function(window) {
 'use strict';
@@ -647,7 +647,7 @@ angular.module('secureNgResource')
 angular.module('secureNgResource')
 .config([
 '$httpProvider',
-function($httpProvider) {$httpProvider.responseInterceptors.push([
+function($httpProvider) {$httpProvider.interceptors.push([
     'authSession', '$q',
     function(authSession, $q) {
         var responder = function(response) {
